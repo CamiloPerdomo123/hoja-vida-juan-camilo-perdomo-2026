@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;400;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* Me permite deslizar cuando hago clic en los links del menu */
+
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+
+/* Fondo del nav principal*/
+.contenedor-heander{
+    background: rgb(5, 31, 40);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-heander header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+
+.contenedor-heander header .logo a{
+    font-family: 'Ringteous';
+    font-size: 30px;
+    color:bisque;
+    text-decoration: none;
+}
+.contenedor-heander header .logo a:hover{
+    color: rgb(140, 193, 208);
+}
+
+.contenedor-heander header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-heander header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .60s;
+    text-decoration: none;          /*esto quita los raya al piso de las url*/
+}
+
+.contenedor-heander header nav ul li a:hover{
+    color: rgb(135, 170, 200);
+}
+
+.nav-responsive{
+    background-color:  rgb(101, 146, 186);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*@media screen{
+    .contenedor-heander .fila{
+        display: block;
+    }
+}*/
+
+/* SECCION DE INICIO */
+
+/* inicio de la seccion del body */
+
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgb(96, 126, 144)),
+    url(img/fondoPrincipal.jpg);
+    background-size: cover;
+    height: 120vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/*Fondo imagen Camilo Perdomo */
+
+.inicio .contenido-banner{
+    padding: 10px;
+    background-color: rgb(9, 23, 40);
+    width: 370px;
+    height: 700px;
+    margin: auto;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+
+/*imagen Camilo Perdomo */
+.inicio .contenedor-img img{
+    margin-top: 30000px;
+    display: block;
+    width: 320px;
+    height: 450px;   
+    margin: auto;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'Ringteous';
+    
+}
+
+.inicio .contenedor-img h1{
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Ringteous';
+}
+
+/*Logo redes sociales Camilo Perdomo */
+.inicio .contenedor-img .redes a{
+   color: #fff; 
+   display: inline-block;
+   text-decoration: none;
+   border: 1px solid #fff;
+   border-radius: 100%;
+   width: 42px;
+   height: 42px;
+   line-height: 42px;
+   margin: 40px 5px;
+   font-size: 20px;
+   transition: .3s;
+}
+
+.inicio .contenedor-img .redes a:hover{
+    background-color: #fff;
+}
+
+/* SOBRE MI */
+
+/* Fondo sobre mi */
+.sobremi{
+    background-color: rgb(13, 39, 60);
+}
+
+/*Margen*/
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    height: 100vh;
+}
+
+/* letra del titulo sobre mi*/
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Ringteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+/* letra de parrafo */
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: bisque;
+}
+
+/* letra de parrafo span */
+.sobremi .contenido-seccion p span{
+    color: bisque;
+    font-weight: bold;
+}
+
+/* css fila */
+.sobremi .fila{
+    display: flex;
+    color: #fff;
+}
+
+/* css fila columna */
+.sobremi .fila .col{
+    width: 50%;
+}
+
+/* css fila columna h3 */
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: 'Ringteous';
+    margin-bottom: 25px;
+}
+
+/* css fila columna distancia */
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+/* css fila columna darle color */
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #1cb698;
+    width: 130%;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #1cb698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Intereses como logos de interes */
+.sobremi .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252a2e;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes i{
+    margin: auto;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes span{
+    margin: auto;
+}
+
+.sobremi .fila .col .contenedor-intereses .interes:hover{
+    background-color:  #1cb698;
+}
+
+/* Boton en la cual se descargara la hoja de vida */
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 20px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1cb698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+
+/* SECCION DE HABILIDADES */
+
+.skills{
+    background-color: rgb(24, 66, 101);
+    color: #fff;
+    padding: 50px 20px;
+}
+
+/*Margen*/
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+/* letra del titulo sobre mi*/
+.skills h2{
+    font-size: 48px;
+    font-family: 'Ringteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .fila{
+    display: flex;
+}
+
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Ringteous';
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Barra de habilidades */
+
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 350px;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progreso{
+    background-color: #1cb698;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+/* Darle forma a los circulos del porcentaje de las habilidades */
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #1cb698;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+
+@keyframes java {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .spring{
+    width: 0%;
+    animation: 2s spring forwards;
+}
+
+@keyframes spring {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .react{
+    width: 0%;
+    animation: 2s react forwards;
+}
+
+@keyframes react {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .postgreSQL{
+    width: 0%;
+    animation: 2s postgreSQL forwards;
+}
+
+@keyframes postgreSQL {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .aws{
+    width: 0%;
+    animation: 2s aws forwards;
+}
+
+@keyframes aws {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+.skills .skill .node{
+    width: 0%;
+    animation: 2s node forwards;
+}
+
+@keyframes node {
+    0%{width: 0%;}
+    100%{width: 40%;}
+}
+.skills .skill .mysql{
+    width: 0%;
+    animation: 2s mysql forwards;
+}
+
+@keyframes mysql {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .solid{
+    width: 0%;
+    animation: 2s solid forwards;
+}
+
+@keyframes solid {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .jasper{
+    width: 0%;
+    animation: 2s jasper forwards;
+}
+
+@keyframes jasper {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+.skills .skill .admin{
+    width: 0%;
+    animation: 2s admin forwards;
+}
+
+@keyframes admin {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+.skills .skill .ingles{
+    width: 0%;
+    animation: 2s ingles forwards;
+}
+
+@keyframes ingles {
+    0%{width: 0%;}
+    100%{width: 30%;}
+}
+
+.skills .skill .angular{
+    width: 0%;
+    animation: 2s angular forwards;
+}
+
+@keyframes angular {
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+
+.skills .skill .native{
+    width: 0%;
+    animation: 2s native forwards;
+}
+
+@keyframes native {
+    0%{width: 0%;}
+    100%{width: 20%;}
+}
+
+.skills .skill .hexagonal{
+    width: 0%;
+    animation: 2s hexagonal forwards;
+}
+
+@keyframes hexagonal {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .cloud{
+    width: 0%;
+    animation: 2s cloud forwards;
+}
+
+@keyframes cloud {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.skills .skill .javaScript{
+    width: 0%;
+    animation: 2s javaScript forwards;
+}
+
+@keyframes javaScript {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+.skills .skill .docker{
+    width: 0%;
+    animation: 2s docker forwards;
+}
+
+@keyframes docker {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+@keyframes python {
+    0%{width: 0%;}
+    100%{width: 10%;}
+}
+
+/* EDUCACION CURRICULUM */
+
+.curriculum{
+    background-color: #1e2326;
+    color: #fff ;
+    padding: auto;
+}
+
+.curriculum .contenido-seccion{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.curriculum h3{
+    font-size: 30px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 30px 0;
+}
+
+.curriculum h4{
+    font-size: 20px;
+    font-family: 'Righteous';
+    padding: 10px 0;
+    color : #0b9b7e
+}
+
+.curriculum h5{
+    font-size: 20px;
+    font-family: 'Righteous';
+    padding: 10px 0;
+    color : #0b9b7e
+}
+
+.curriculum .item-izq p{
+    text-align: justify;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.curriculum .fila{
+    display: flex;
+}
+
+.curriculum .fila .col-izq{
+    margin-left: 50px;
+}
+.curriculum .fila .col-derecha{
+    margin-left: 400px;
+}
+
+.curriculum .fila .item-izq .casa{
+    color: #69c388;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item-der .casa{
+    color: #69c388;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
