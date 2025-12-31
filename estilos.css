@@ -610,3 +610,129 @@ html{
     font-weight: bold;
     display: block;
 }
+
+@media screen and (max-width: 980px) {
+
+    /* MENU */
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background: #1e2326;
+        width: 100%;
+        z-index: 99;
+    }
+
+    nav.responsive ul {
+        display: block;
+    }
+
+    nav.responsive ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* SECCIONES */
+    section {
+        padding: 40px 15px;
+    }
+
+    .contenido-seccion {
+        width: 100%;
+    }
+
+    /* FILAS A COLUMNAS */
+    .fila {
+        flex-direction: column;
+    }
+
+    .col,
+    .col-izq,
+    .col-derecha {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .inicio .contenido-banner {
+        padding: 20px;
+    }
+
+    .inicio h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .contenedor-img img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .redes a {
+        font-size: 22px;
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sobremi p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .sobremi .col ul li {
+        font-size: 14px;
+    }
+
+    .contenedor-intereses {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .skills .skill span {
+        font-size: 13px;
+    }
+
+    .barra-skill {
+        height: 12px;
+    }
+
+    .progreso span {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .curriculum .item-izq,
+    .curriculum .item-der {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .curriculum .conectori {
+        display: none;
+    }
+
+    .tech {
+        display: block;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}
